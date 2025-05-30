@@ -24,3 +24,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth !important;
+}
+
+.FloatingAnimation {
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.scrollhide::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+  overflow-y: auto;
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+  /*   background-color: rgba(0, 0, 0, 0.909);
+  */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6c3ae9;
+  border-radius: 1rem;
+  border: 0.1rem solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(219, 50, 50, 0.919);
+}
