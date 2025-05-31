@@ -16,6 +16,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
   }
 }
 
@@ -29,6 +30,8 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth !important;
+  font-family: var(--font-poppins), sans-serif;
+
 }
 
 .FloatingAnimation {
