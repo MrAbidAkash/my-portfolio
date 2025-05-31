@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${geistMono.variable} antialiased  !bg-stone-100 h-full pt30`}
+        className={`${poppins.variable} ${geistMono.variable} antialiased  !bg-stone-100  !text-black h-full pt30`}
       >
         <Header /> {/* Site header/nav */}
         <main className="max-w-7xl mx-auto py-10 mt-5">{children}</main>

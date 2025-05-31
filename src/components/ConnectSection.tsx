@@ -10,14 +10,14 @@ const ConnectSection = () => {
       <div className="flex flex-col md:flex-row gap-4 p-8 md:p-1 w-full">
         {/* Left */}
         <div className="fle-1 bg-white rounded-3xl p-10 shadow-md flex flex-col gap-10 justify-center w-[40%]">
-          <h2 className="text-4xl sm:text-7xl font-semibold leading- mb-4">
+          <h2 className="text-4xl sm:text-7xl font-semibold mb-4">
             Let’s <br />
             connect <br />
             and chat
           </h2>
           <a
             href="mailto:hello@cozy.com"
-            className="inline-flex items-center gap-2 text-md font-medium text-gray-700 hover:text-black mt-2"
+            className="inline-flex items-center gap-2 text-xl font-medium text-gray-700 hover:text-black mt-2"
           >
             Mr.AbidAkash@gmail.com{" "}
             <ArrowUpRight className="w-6 h-6 p-1 rounded-full bg-black text-white" />

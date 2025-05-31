@@ -11,8 +11,10 @@ export default function Header() {
   return (
     <header className=" top-0 w-full  z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 bg-white rounded-3xl mt-5 shadow-sm">
-        <div className="text-3xl font-bold">
-          <a href="/">Mr.Abidakash</a>
+        <div>
+          <a className="text-3xl font-bold !z-[100]" href="/">
+            Mr.Abidakash
+          </a>
         </div>
         {/* Desktop Links */}
         <nav className="hidden md:flex space-x-8">
