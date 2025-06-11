@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { FiFigma } from "react-icons/fi";
@@ -47,50 +47,60 @@ const containerVariants = {
   },
 };
 
-const cardHoverVariants = {
-  hover: {
-    y: -10,
-    scale: 1.02,
-    transition: {
-      duration: 0.3,
-      ease: "easeOut",
-    },
-  },
-};
+// const cardHoverVariants = {
+//   hover: {
+//     y: -10,
+//     scale: 1.02,
+//     transition: {
+//       duration: 0.3,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
 const Works = () => {
-  const cardsRef = useRef(null);
-  const isInView = useInView(cardsRef, {
-    once: false,
-    margin: "0px 0px -100px 0px",
+  // const cardsRef = useRef(null);
+  // const isInView = useInView(cardsRef, {
+  //   once: false,
+  //   margin: "0px 0px -100px 0px",
+  // });
+
+  // const cardVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: -50,
+  //   },
+  //   visible: (i: number) => ({
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       delay: i * 0.15,
+  //       duration: 0.6,
+  //       ease: "easeOut",
+  //     },
+  //   }),
+  // };
+
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
   });
 
-  const cardVariants = {
-    hidden: {
-      opacity: 0,
-      x: -50,
-    },
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.15,
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    }),
-  };
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-3%"]);
 
   return (
     <motion.section
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="my-14 flex flex-col gap-10 h-screen overflow-hidden "
+      ref={containerRef}
+      // style={{ height: `${services.length * CARDSIZE}px` }}
+      className="my-14 flex flex-col gap-10 relative"
     >
       {/* Services Section */}
-      <div className="flex flex-col md:flex-row gap-5">
-        <div className="flex flex-col gap-8">
+      <div className="flex flex-col md:flex-row gap-5 ">
+        <div className="flex flex-col gap-8 left-0 h-screen sticky top-16 mt-10">
           <motion.p
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -110,30 +120,22 @@ const Works = () => {
             </motion.a>
           </div>
         </div>
-        <div className="w-full overflow-y-scroll h-full">
-          <div
-            ref={cardsRef}
-            className="grid grid-cols-1 gap-5 mt-2 w-full h-full "
-          >
+        <motion.div style={{ y }} className="w-full">
+          <div className="mt-2 w-full">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                custom={index}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={cardVariants}
-                whileHover={cardHoverVariants.hover}
-                className="relative bg-white p-8 rounded-4xl pb-7 shadow-lg hover:shadow-xl transition-shadow w-full h-full flex flex-col "
+                className="h-[600px]  overflow-hidden my-10 p-8 rounded-4xl bg-white"
               >
                 <div className="flex items-start gap-5 w-full h-full overflow-hidden">
-                  <div className="relative w-full -mt-0.5  min-h-110 border rounded-4xl h-full">
+                  <div className="relative w-full -mt-0.5  min-h-110 border rounded-4xl h-140">
                     <Image
                       fill
-                      className="w-ful object-cover"
+                      className="w-full object-cover"
                       src={service.img}
                       alt="service.img"
                     />
-                  </div>{" "}
+                  </div>
                 </div>
                 <div className="mt-5 flex flex-col gap-5">
                   <div className="flex justify-between w-full">
@@ -148,10 +150,10 @@ const Works = () => {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );
