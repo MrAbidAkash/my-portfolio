@@ -101,14 +101,25 @@ const Works = () => {
       {/* Services Section */}
       <div className="flex flex-col md:flex-row gap-5 ">
         <div className="flex flex-col gap-8 left-0 h-screen sticky top-16 mt-10">
-          <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-4xl font-bold md:min-w-50"
-          >
-            Selected Work
-          </motion.p>
+          <div>
+            {" "}
+            <motion.p
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-[42px] leading-[1.111] font-semibold md:min-w-50"
+            >
+              Selected
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-4xl font-semibold md:min-w-50"
+            >
+              Work
+            </motion.p>
+          </div>
           <div>
             <motion.a
               initial={{ opacity: 0, x: -20 }}
@@ -121,14 +132,14 @@ const Works = () => {
           </div>
         </div>
         <motion.div style={{ y }} className="w-full">
-          <div className="mt-2 w-full">
+          <div className="mt-2 w-full flex flex-col gap-5">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="h-[600px]  overflow-hidden my-10 p-8 rounded-4xl bg-white"
+                className="h-[600px]  overflow-hidden my-1 p-8 flex flex-col gap-4 rounded-4xl bg-white shadow-[0px_0px_17px_2px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_0px_17px_8px_rgba(0,_0,_0,_0.1)] transition-shadow"
               >
                 <div className="flex items-start gap-5 w-full h-full overflow-hidden">
-                  <div className="relative w-full -mt-0.5  min-h-110 border rounded-4xl h-140">
+                  <div className="relative w-full -mt-0.5  min-h-100 border rounded-4xl h-110">
                     <Image
                       fill
                       className="w-full object-cover"
@@ -137,7 +148,7 @@ const Works = () => {
                     />
                   </div>
                 </div>
-                <div className="mt-5 flex flex-col gap-5">
+                <div className="mt- flex flex-col gap-5">
                   <div className="flex justify-between w-full">
                     <h4 className="text-lg font-bold ">{service.title}</h4>
                     <span className="text-lg font-bold text-teal-600">
