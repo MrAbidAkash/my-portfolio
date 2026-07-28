@@ -6,7 +6,16 @@ import Image from "next/image";
 import { FiExternalLink, FiGithub, FiSearch } from "react-icons/fi";
 import { projectsData } from "@/components/Works";
 
-const categories = ["All", "Full-Stack Web App", "Real-Time System", "SaaS Product", "Web Application"];
+const categories = [
+  "All",
+  "Full-Stack Web App",
+  "SaaS Product",
+  "Web Application",
+  "WordPress Website",
+  "E-Commerce",
+  "Landing Page",
+  "Desktop & Web System"
+];
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
