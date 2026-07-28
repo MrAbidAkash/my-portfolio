@@ -1,8 +1,7 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import { FiFigma } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FiCode, FiLayout, FiServer, FiDatabase } from "react-icons/fi";
 import {
   SiReact,
   SiNextdotjs,
@@ -11,45 +10,47 @@ import {
   SiMongodb,
   SiPostgresql,
   SiPrisma,
+  SiTailwindcss,
 } from "react-icons/si";
 
 const techIcons = [
-  { icon: SiReact, title: "React" },
-  { icon: SiNextdotjs, title: "Next.js" },
-  { icon: SiNodedotjs, title: "Node.js" },
+  { icon: SiReact, title: "React 19" },
+  { icon: SiNextdotjs, title: "Next.js 15" },
   { icon: SiTypescript, title: "TypeScript" },
-  { icon: SiMongodb, title: "MongoDB" },
+  { icon: SiNodedotjs, title: "Node.js" },
+  { icon: SiTailwindcss, title: "Tailwind CSS" },
   { icon: SiPostgresql, title: "PostgreSQL" },
-  { icon: SiPrisma, title: "Prisma" },
+  { icon: SiMongodb, title: "MongoDB" },
+  { icon: SiPrisma, title: "Prisma ORM" },
 ];
 
 const services = [
   {
-    title: "UI Design",
-    icon: FiFigma,
+    title: "UI/UX & Frontend Architecture",
+    icon: FiLayout,
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo odio delectus sequi debitis non quos dolorem saepe eligendi nam ipsa porro officia excepturi recusandae quae, asperiores amet molestias sapiente illum!",
+      "Crafting pixel-perfect, accessible, and responsive user interfaces with Next.js, React, Tailwind CSS, and smooth Framer Motion animations.",
     number: "01",
   },
   {
-    title: "Web Development",
-    icon: FiFigma,
+    title: "Full-Stack Web Applications",
+    icon: FiCode,
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo odio delectus sequi debitis non quos dolorem saepe eligendi nam ipsa porro officia excepturi recusandae quae, asperiores amet molestias sapiente illum!",
+      "Building scalable web solutions end-to-end with modern frameworks, serverless APIs, type safety, and seamless third-party integrations.",
     number: "02",
   },
   {
-    title: "API Development",
-    icon: FiFigma,
+    title: "API & Backend Systems",
+    icon: FiServer,
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo odio delectus sequi debitis non quos dolorem saepe eligendi nam ipsa porro officia excepturi recusandae quae, asperiores amet molestias sapiente illum!",
+      "Designing resilient RESTful and GraphQL APIs, microservices, authentication systems, and optimized backend query pipelines.",
     number: "03",
   },
   {
-    title: "Database Design",
-    icon: FiFigma,
+    title: "Database Modeling & Performance",
+    icon: FiDatabase,
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo odio delectus sequi debitis non quos dolorem saepe eligendi nam ipsa porro officia excepturi recusandae quae, asperiores amet molestias sapiente illum!",
+      "Architecting efficient SQL & NoSQL data schemas, index optimizations, caching layers, and reliable data migrations.",
     number: "04",
   },
 ];
@@ -60,7 +61,6 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 0.3,
     },
   },
 };
@@ -70,142 +70,95 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
-
-const cardHoverVariants = {
-  hover: {
-    y: -10,
-    scale: 1.02,
-    transition: {
-      duration: 0.3,
-      ease: "easeOut",
-    },
-  },
-};
-
-const iconHoverVariants = {
-  hover: {
-    y: -5,
-    scale: 1.1,
-    transition: {
-      duration: 0.2,
-      type: "spring",
-      stiffness: 500,
-    },
+    transition: { duration: 0.5 },
   },
 };
 
 const Mission = () => {
-  const cardsRef = useRef(null);
-  const isInView = useInView(cardsRef, {
-    once: false,
-    margin: "0px 0px -100px 0px",
-  });
-
-  const cardVariants = {
-    hidden: {
-      opacity: 0,
-      x: -50,
-    },
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.15,
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    }),
-  };
-
   return (
     <motion.section
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
-      className="my-14 flex flex-col gap-10 min-h-screen"
+      className="py-12 space-y-16"
     >
-      {/* Mission Statement */}
+      {/* Mission Banner Card */}
       <motion.div
         variants={itemVariants}
-        className="bg-teal-600 rounded-2xl p-12 space-y-10"
+        className="relative bg-gradient-to-br from-teal-900 via-stone-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl border border-white/10 overflow-hidden"
       >
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-3xl font-bold text-white"
-        >
-          Turning complex ideas into clean, efficient code — delivering web
-          applications that are fast, functional, and future-ready — where user
-          experience and business goals align seamlessly
-        </motion.h3>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        <motion.div
-          className="flex flex-wrap gap-4"
-          variants={containerVariants}
-        >
-          {techIcons.map((tech, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              whileHover={iconHoverVariants.hover}
-              className="p-2 rounded-lg bg-white/10 backdrop-blur-sm"
-            >
-              <tech.icon
-                className="text-slate-300 text-3xl"
-                title={tech.title}
-              />
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="max-w-4xl space-y-8 relative z-10">
+          <span className="text-xs font-mono uppercase tracking-widest text-teal-400">
+            ENGINEERING PHILOSOPHY
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-bold leading-relaxed text-stone-100">
+            &ldquo;Turning complex ideas into clean, efficient, future-ready code — delivering web applications where exceptional user experience and core business goals align seamlessly.&rdquo;
+          </h2>
+
+          <div className="pt-4 border-t border-white/10">
+            <p className="text-xs font-mono uppercase tracking-wider text-stone-400 mb-4">
+              Core Tech Stack & Ecosystem:
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {techIcons.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-stone-200 text-xs font-medium cursor-pointer"
+                >
+                  <tech.icon className="text-base text-teal-400" />
+                  <span>{tech.title}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
       </motion.div>
 
-      {/* Services Section */}
-      <div className="flex flex-col md:flex-row gap-5">
-        <motion.p
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-4xl font-bold md:min-w-50"
-        >
-          How can I assist you?
-        </motion.p>
+      {/* Services Grid */}
+      <div className="space-y-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div>
+            <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
+              EXPERT SERVICES
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight mt-1">
+              How Can I Assist You?
+            </h2>
+          </div>
+          <p className="text-stone-600 text-sm max-w-md">
+            Tailored software development solutions engineered to elevate your digital presence.
+          </p>
+        </div>
 
-        <div
-          ref={cardsRef}
-          className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              custom={index}
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              variants={cardVariants}
-              whileHover={cardHoverVariants.hover}
-              className="relative bg-white p-5 rounded-xl pb-20 shadow-lg hover:shadow-xl transition-shadow"
+              variants={itemVariants}
+              whileHover={{ y: -4 }}
+              className="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-6 group"
             >
-              <div className="flex items-start gap-5">
-                <motion.span whileHover={{ rotate: 15 }} className="mt-0.5">
-                  <service.icon
-                    size={40}
-                    className="p-2 rounded-full bg-slate-100 text-blue-700"
-                  />
-                </motion.span>
-                <p className="text-gray-600">{service.description}</p>
+              <div className="flex items-start justify-between">
+                <div className="p-3.5 rounded-2xl bg-teal-50 text-teal-700 group-hover:bg-teal-600 group-hover:text-white transition-colors duration-300">
+                  <service.icon size={26} />
+                </div>
+                <span className="text-2xl font-mono font-bold text-stone-300 group-hover:text-teal-600 transition-colors">
+                  {service.number}
+                </span>
               </div>
-              <h4 className="text-xl font-bold absolute bottom-5 left-5">
-                {service.title}
-              </h4>
-              <span className="text-xl font-bold absolute bottom-5 right-8 text-teal-600">
-                {service.number}
-              </span>
+
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-stone-900 group-hover:text-teal-700 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 interface Props {
@@ -5,11 +7,12 @@ interface Props {
   className?: string;
 }
 
-export default function AutoSnapSection({ children }: Props) {
+export default function AutoSnapSection({ children, className = "" }: Props) {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const hasSnapped = useRef(false); // Prevent multiple triggers
+  const hasSnapped = useRef(false);
 
   useEffect(() => {
+    const el = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (
@@ -24,27 +27,26 @@ export default function AutoSnapSection({ children }: Props) {
           hasSnapped.current = true;
         }
 
-        // Reset when out of view
         if (!entry.isIntersecting) {
           hasSnapped.current = false;
         }
       },
       {
-        threshold: 0.01, // Trigger as soon as it touches
-      },
+        threshold: 0.01,
+      }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (el) {
+      observer.observe(el);
     }
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (el) observer.unobserve(el);
     };
   }, []);
 
   return (
-    <div ref={sectionRef} className={`h-screen w-full`}>
+    <div ref={sectionRef} className={className}>
       {children}
     </div>
   );

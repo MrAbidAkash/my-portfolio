@@ -1,10 +1,9 @@
-// app/page.tsx (Home)
 import Hero from "@/components/Hero";
 import MotionSection from "@/components/MotionSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-26">
+    <div className="flex flex-col space-y-16">
       <Hero />
       <MotionSection />
     </div>

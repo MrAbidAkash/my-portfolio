@@ -1,172 +1,154 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
-import { FiFigma } from "react-icons/fi";
+import Link from "next/link";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-const services = [
+export const projectsData = [
   {
-    title: "Note Taking App",
-    category: "Web Development",
-    icon: FiFigma,
+    id: "ghotion",
+    title: "Ghotion — AI Note Taking App",
+    category: "Full-Stack Web App",
+    tags: ["Next.js", "React", "Tailwind CSS", "OpenAI", "Prisma"],
     img: "/ghotion.png",
+    description:
+      "A modern workspace combining rich-text markdown editing, block-based note organization, and embedded AI writing assistance.",
     year: "2024",
+    demoUrl: "#",
+    githubUrl: "#",
   },
   {
-    title: "Chat App",
-    category: "Web Development",
-    icon: FiFigma,
+    id: "nexus-chat",
+    title: "Nexus — Real-Time Chat & Collaboration",
+    category: "Real-Time System",
+    tags: ["TypeScript", "Next.js", "Socket.io", "Tailwind CSS", "MongoDB"],
     img: "/ghotion.png",
+    description:
+      "Instant messaging application featuring workspace channels, direct audio calls, online presence, and file attachment uploads.",
+    year: "2024",
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: "wander-travel",
+    title: "Wanderlust — Travel & Booking Platform",
+    category: "Web Application",
+    tags: ["React", "Node.js", "Express", "Stripe API", "PostgreSQL"],
+    img: "/ghotion.png",
+    description:
+      "Complete travel discovery and reservation platform with interactive map integration, user reviews, and secure checkout payment flows.",
     year: "2023",
+    demoUrl: "#",
+    githubUrl: "#",
   },
   {
-    title: "Travel App",
-    category: "Web Development",
-    icon: FiFigma,
+    id: "enterprise-crm",
+    title: "Orbit CRM — Enterprise Operations Suite",
+    category: "SaaS Product",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "GraphQL", "PostgreSQL"],
     img: "/ghotion.png",
-    year: "2022",
-  },
-  {
-    title: "CRM App",
-    category: "Software Development",
-    icon: FiFigma,
-    img: "/ghotion.png",
-    year: "2022",
+    description:
+      "Customer relationship management dashboard equipped with analytical charts, pipeline deal tracking, and automated email workflows.",
+    year: "2023",
+    demoUrl: "#",
+    githubUrl: "#",
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.3,
-    },
-  },
-};
-
-// const cardHoverVariants = {
-//   hover: {
-//     y: -10,
-//     scale: 1.02,
-//     transition: {
-//       duration: 0.3,
-//       ease: "easeOut",
-//     },
-//   },
-// };
-
 const Works = () => {
-  // const cardsRef = useRef(null);
-  // const isInView = useInView(cardsRef, {
-  //   once: false,
-  //   margin: "0px 0px -100px 0px",
-  // });
-
-  // const cardVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     x: -50,
-  //   },
-  //   visible: (i: number) => ({
-  //     opacity: 1,
-  //     x: 0,
-  //     transition: {
-  //       delay: i * 0.15,
-  //       duration: 0.6,
-  //       ease: "easeOut",
-  //     },
-  //   }),
-  // };
-
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-3%"]);
-
   return (
-    <motion.section
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-      ref={containerRef}
-      // style={{ height: `${services.length * CARDSIZE}px` }}
-      className="my-14 flex flex-col gap-10 relative"
-    >
-      {/* Services Section */}
-      <div className="flex flex-col md:flex-row gap-5 ">
-        <div className="flex flex-col gap-8 left-0 h-screen sticky top-16 mt-10">
-          <div>
-            {" "}
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-[42px] leading-[1.111] font-semibold md:min-w-50"
-            >
-              Selected
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-4xl font-semibold md:min-w-50"
-            >
-              Work
-            </motion.p>
-          </div>
-          <div>
-            <motion.a
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-xl font-bold md:min-w-50 text-white bg-black hover:bg-teal-600 rounded-full px-5 py-2"
-            >
-              See All
-            </motion.a>
-          </div>
+    <section className="py-12 space-y-10" id="projects">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
+            PORTFOLIO SHOWCASE
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight mt-1">
+            Featured Projects
+          </h2>
         </div>
-        <motion.div style={{ y }} className="w-full">
-          <div className="mt-2 w-full flex flex-col gap-5">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="h-[600px]  overflow-hidden my-1 p-8 flex flex-col gap-4 rounded-4xl bg-white shadow-[0px_0px_17px_2px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_0px_17px_8px_rgba(0,_0,_0,_0.1)] transition-shadow"
-              >
-                <div className="flex items-start gap-5 w-full h-full overflow-hidden">
-                  <div className="relative w-full -mt-0.5  min-h-100 border rounded-4xl h-110">
-                    <Image
-                      fill
-                      className="w-full object-cover"
-                      src={service.img}
-                      alt="service.img"
-                    />
-                  </div>
-                </div>
-                <div className="mt- flex flex-col gap-5">
-                  <div className="flex justify-between w-full">
-                    <h4 className="text-lg font-bold ">{service.title}</h4>
-                    <span className="text-lg font-bold text-teal-600">
-                      {service.year}
-                    </span>
-                  </div>
-                  <div className="">
-                    <span className="text-base bg-slate-100 text-teal-600 px-3 py-2 rounded-full  items-end gap-1.5 font-semibold text-center">
-                      {service.category}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-900 transition-colors"
+        >
+          <span>View All Projects</span>
+          <span>→</span>
+        </Link>
       </div>
-    </motion.section>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projectsData.map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="group bg-white rounded-3xl border border-stone-200/80 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+          >
+            {/* Image Banner */}
+            <div className="relative w-full h-64 sm:h-72 bg-stone-100 overflow-hidden border-b border-stone-100">
+              <Image
+                src={project.img}
+                alt={project.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono font-semibold text-stone-800 shadow-sm">
+                {project.year}
+              </div>
+            </div>
+
+            {/* Content Details */}
+            <div className="p-6 sm:p-8 space-y-5 flex-1 flex flex-col justify-between">
+              <div className="space-y-3">
+                <span className="text-xs font-mono uppercase tracking-wider text-teal-600 font-medium">
+                  {project.category}
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold text-stone-900 group-hover:text-teal-700 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+
+              {/* Tech Badges */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-mono rounded-md"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex items-center space-x-4 pt-4 border-t border-stone-100">
+                <a
+                  href={project.demoUrl}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-stone-900 hover:text-teal-600 transition-colors"
+                >
+                  <span>Live Preview</span>
+                  <FiExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href={project.githubUrl}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-stone-600 hover:text-stone-900 transition-colors"
+                >
+                  <FiGithub className="w-3.5 h-3.5" />
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
   );
 };
 
