@@ -36,7 +36,7 @@ export default function Header() {
         <div className="flex items-center justify-between px-6 py-3.5 bg-white/80 backdrop-blur-md rounded-full border border-stone-200/80 shadow-sm transition-shadow hover:shadow-md">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold tracking-tight text-stone-900 group">
-            Mr.<span className="text-teal-600 transition-colors group-hover:text-teal-500">AbidAkash</span>
+            Abidur<span className="text-teal-600 transition-colors group-hover:text-teal-500">Rahman</span>
           </Link>
 
           {/* Desktop Links */}

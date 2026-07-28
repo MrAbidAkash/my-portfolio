@@ -8,20 +8,28 @@ import Experience from "@/components/Experience";
 
 const skillsCategories = [
   {
-    title: "Frontend Engineering",
-    skills: ["React 19", "Next.js 15", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Redux Toolkit"],
+    title: "Front-End",
+    skills: ["React.js", "Next.js", "TypeScript", "Redux Toolkit", "RTK Query", "Tailwind CSS", "Ant Design"],
   },
   {
-    title: "Backend & Systems",
-    skills: ["Node.js", "Express", "REST APIs", "GraphQL", "Python", "Serverless Functions"],
+    title: "Back-End",
+    skills: ["Node.js", "Nest.js", "Express.js", "REST APIs", "JWT Auth", "RBAC", "Webhooks"],
   },
   {
-    title: "Databases & ORM",
-    skills: ["PostgreSQL", "MongoDB", "Prisma ORM", "Redis Caching", "Supabase", "SQL Optimization"],
+    title: "Databases",
+    skills: ["MongoDB", "PostgreSQL", "MySQL"],
   },
   {
-    title: "DevOps & Tooling",
-    skills: ["Git / GitHub", "Docker", "Vercel / AWS", "CI/CD Pipelines", "Jest & Cypress", "Lighthouse SEO"],
+    title: "Desktop",
+    skills: ["Python", "Electron.js"],
+  },
+  {
+    title: "DevOps & Tools",
+    skills: ["Prisma ORM", "Payload CMS", "Git", "Docker", "Linux", "Coolify", "Dokploy", "GCP", "AWS"],
+  },
+  {
+    title: "Integrations",
+    skills: ["Google Maps API", "Google Calendar API", "GoHighLevel CRM"],
   },
 ];
 
@@ -54,7 +62,7 @@ export default function AboutPage() {
         className="space-y-4 text-center max-w-3xl mx-auto"
       >
         <span className="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono font-semibold uppercase tracking-widest rounded-full">
-          ABOUT MR. ABID AKASH
+          ABOUT ABIDUR RAHMAN
         </span>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-stone-900">
           Passionate about building software that makes an impact
@@ -75,7 +83,7 @@ export default function AboutPage() {
           <div className="relative w-full max-w-sm h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-stone-200">
             <Image
               src="/MrAbidAkash.jpg"
-              alt="Mr. Abid Akash"
+              alt="Abidur Rahman"
               fill
               className="object-cover object-top"
             />
@@ -92,17 +100,17 @@ export default function AboutPage() {
             Crafting code with precision & creative design vision
           </h2>
           <p>
-            Hello! I&apos;m Mr. Abid Akash. Over the past 5+ years, I&apos;ve collaborated with startups, high-growth tech companies, and clients worldwide to design and engineer web applications.
+            Hello! I&apos;m Abidur Rahman (Abid). Over the past 3+ years, I&apos;ve collaborated with startups, high-growth tech companies, and clients worldwide to design and engineer web applications.
           </p>
           <p>
-            My core engineering domain centers around the modern JavaScript & TypeScript ecosystem (React, Next.js, Node.js). Whether building real-time collaboration apps, SaaS dashboards, or e-commerce experiences, I focus heavily on component reusability, server rendering performance, and clean architectural design.
+            My core engineering domain centers around the modern JavaScript & TypeScript ecosystem (React, Next.js, Node.js). Whether building ERP platforms, CRM systems, or desktop applications, I focus heavily on component reusability, server rendering performance, and clean architectural design.
           </p>
 
           <div className="grid grid-cols-2 gap-4 pt-4 border-t border-stone-200">
             <div className="flex items-center gap-3">
               <FiAward className="w-6 h-6 text-teal-600" />
               <div>
-                <div className="text-lg font-bold text-stone-900">5+ Years</div>
+                <div className="text-lg font-bold text-stone-900">3+ Years</div>
                 <div className="text-xs text-stone-500 font-mono">Industry Experience</div>
               </div>
             </div>
@@ -159,7 +167,7 @@ export default function AboutPage() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillsCategories.map((cat, idx) => (
             <div
               key={idx}
@@ -183,6 +191,49 @@ export default function AboutPage() {
 
       {/* Experience Timeline */}
       <Experience />
+
+      {/* Education & Certifications */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
+              ACADEMIC BACKGROUND
+            </span>
+            <h2 className="text-2xl font-bold text-stone-900 tracking-tight">
+              Education
+            </h2>
+          </div>
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm">
+            <h3 className="text-lg font-bold text-stone-900">Bachelor of Arts, English Language and Literature</h3>
+            <div className="text-sm font-semibold text-teal-600 mb-2">Daffodil International University (DIU)</div>
+            <div className="text-xs font-mono text-stone-500 mb-4">2019 — 2022 (Incomplete)</div>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              Completed coursework through Year 2; left program to pursue full‑time software development.
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
+              PROFESSIONAL CREDENTIALS
+            </span>
+            <h2 className="text-2xl font-bold text-stone-900 tracking-tight">
+              Licenses & Certifications
+            </h2>
+          </div>
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+            <div className="flex flex-col border-b border-stone-100 pb-4">
+              <h3 className="text-base font-bold text-stone-900">Google Cybersecurity Specialization</h3>
+              <div className="text-sm text-stone-500">Google</div>
+            </div>
+            <div className="flex flex-col">
+              <h3 className="text-base font-bold text-stone-900">Google Data Analytics Specialization</h3>
+              <div className="text-sm text-stone-500">Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Bottom CTA */}
       <div className="bg-stone-900 text-white rounded-3xl p-8 sm:p-12 text-center space-y-6">

@@ -11,17 +11,25 @@ import {
   SiPostgresql,
   SiPrisma,
   SiTailwindcss,
+  SiRedux,
+  SiDocker,
+  SiAmazonwebservices,
+  SiPython
 } from "react-icons/si";
 
 const techIcons = [
-  { icon: SiReact, title: "React 19" },
-  { icon: SiNextdotjs, title: "Next.js 15" },
+  { icon: SiReact, title: "React" },
+  { icon: SiNextdotjs, title: "Next.js" },
   { icon: SiTypescript, title: "TypeScript" },
   { icon: SiNodedotjs, title: "Node.js" },
   { icon: SiTailwindcss, title: "Tailwind CSS" },
   { icon: SiPostgresql, title: "PostgreSQL" },
   { icon: SiMongodb, title: "MongoDB" },
   { icon: SiPrisma, title: "Prisma ORM" },
+  { icon: SiRedux, title: "Redux Toolkit" },
+  { icon: SiDocker, title: "Docker" },
+  { icon: SiAmazonwebservices, title: "AWS" },
+  { icon: SiPython, title: "Python" }
 ];
 
 const services = [

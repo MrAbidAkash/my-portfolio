@@ -5,38 +5,44 @@ import { FiBriefcase, FiCalendar } from "react-icons/fi";
 
 const experiences = [
   {
-    company: "SkillersZone LLC",
-    role: "Full-Time Senior Software Developer",
-    period: "2024 — Present",
-    location: "Remote",
-    highlights: [
-      "Architected scalable Next.js and Node.js microservices serving 50k+ monthly active users.",
-      "Engineered responsive UI design systems reducing component library build sizes by 35%.",
-      "Collaborated with product teams to integrate real-time web socket feeds and automated CI/CD pipelines.",
-    ],
-    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
-  },
-  {
-    company: "Google",
-    role: "Cyber Security & Data Analyst (Contract)",
-    period: "2023 — 2024",
-    location: "Remote",
-    highlights: [
-      "Analyzed threat intelligence metrics and developed automated python data processing scripts.",
-      "Constructed interactive telemetry dashboards for real-time log monitoring and anomaly alerts.",
-    ],
-    skills: ["Python", "SQL", "Cybersecurity Telemetry", "Data Visualization"],
-  },
-  {
-    company: "Tech Edge Solutions",
-    role: "Frontend Developer",
-    period: "2022 — 2023",
+    company: "SkillersZone LTD, Bangladesh",
+    role: "Software Developer",
+    period: "Nov 2024 — Present",
     location: "On-Site",
     highlights: [
-      "Built cross-platform responsive web portals using React, Redux Toolkit, and RESTful APIs.",
-      "Optimized Core Web Vitals to achieve 98+ Google Lighthouse performance scores across client web products.",
+      "Architected and developed a scalable ERP platform (HRM, CRM, Task Management) using React, Express.js, Prisma, PostgreSQL, and Redis.",
+      "Built a task management system used by 100+ employees, enabling real-time task tracking and centralized workflow management.",
+      "Designed and optimized the CRM module to efficiently manage thousands of sales leads using PostgreSQL and Redis caching.",
+      "Developed a cross-platform employee monitoring and remote management solution supporting Windows and macOS.",
+      "Built Digital Soft Card Super Admin and Company Admin Dashboard for centralized company management.",
     ],
-    skills: ["React", "JavaScript (ES6+)", "REST APIs", "CSS Modules"],
+    skills: ["React", "Express.js", "Prisma", "PostgreSQL", "Redis", "Electron.js", "Python"],
+  },
+  {
+    company: "FutuRexa Solutions, Inc.",
+    role: "Software Developer",
+    period: "June 2025 — Sept 2025",
+    location: "Remote",
+    highlights: [
+      "Developed and deployed an AI-driven partner and referral platform with automated onboarding workflows.",
+      "Integrated GoHighLevel CRM via API automation to streamline lead capture and follow-up sequences.",
+      "Implemented Google Maps API for location-based tradie matching.",
+      "Integrated Google Calendar API for real-time availability scheduling.",
+      "Refactored a membership management portal enabling desk managers to manage check-ins, payments, and attendance.",
+    ],
+    skills: ["GoHighLevel CRM", "Google Maps API", "Google Calendar API", "AI Integrations"],
+  },
+  {
+    company: "Freelance",
+    role: "Full-Stack Developer",
+    period: "Nov 2023 — Present",
+    location: "Remote",
+    highlights: [
+      "Delivered custom full-stack applications for international clients.",
+      "Designed scalable architectures and implemented secure backend systems.",
+      "Provided post-deployment optimization and performance improvements.",
+    ],
+    skills: ["Full-Stack Development", "System Architecture", "Performance Optimization"],
   },
 ];
 

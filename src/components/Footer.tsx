@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-stone-800">
           <div>
             <Link href="/" className="text-2xl font-bold text-white tracking-tight">
-              Mr.<span className="text-teal-400">AbidAkash</span>
+              Abidur<span className="text-teal-400">Rahman</span>
             </Link>
             <p className="text-sm text-stone-400 mt-1">
               Full-Stack Software Developer & UI/UX Craftsman
@@ -44,7 +44,7 @@ const Footer = () => {
               <FiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/mrabidakash"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Mr.AbidAkash. Built with Next.js, Tailwind CSS & Framer Motion.</p>
+          <p>© {new Date().getFullYear()} Abidur Rahman. Built with Next.js, Tailwind CSS & Framer Motion.</p>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-full transition-all text-xs font-mono cursor-pointer"

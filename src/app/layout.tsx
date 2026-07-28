@@ -16,22 +16,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mr. Abid Akash — Senior Full-Stack Software Developer",
+  title: "Abidur Rahman (Abid) — Full-Stack Software Developer",
   description:
-    "Portfolio of Mr. Abid Akash, specializing in modern React, Next.js, TypeScript, and high-performance Web Applications.",
+    "Portfolio of Abidur Rahman (Abid), specializing in modern React, Next.js, TypeScript, and high-performance Web Applications.",
   keywords: [
     "Software Developer",
     "Full Stack Engineer",
     "React Developer",
     "Next.js",
     "TypeScript",
+    "Python",
     "Web Developer Portfolio",
   ],
-  authors: [{ name: "Mr. Abid Akash" }],
+  authors: [{ name: "Abidur Rahman" }],
   openGraph: {
-    title: "Mr. Abid Akash — Senior Full-Stack Software Developer",
+    title: "Abidur Rahman (Abid) — Full-Stack Software Developer",
     description:
-      "Crafting high-performance web applications, scalable architectures, and beautiful user interfaces.",
+      "Crafting high-performance web applications, scalable architectures, and enterprise systems.",
     type: "website",
   },
 };

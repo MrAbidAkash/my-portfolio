@@ -8,8 +8,8 @@ const contactCards = [
   {
     icon: FiMail,
     title: "Email Address",
-    value: "abidakash@example.com",
-    href: "mailto:abidakash@example.com",
+    value: "mrabidakash@gmail.com",
+    href: "mailto:mrabidakash@gmail.com",
   },
   {
     icon: FiMapPin,
@@ -89,7 +89,7 @@ export default function ContactPage() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/mrabidakash"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-stone-700 hover:text-teal-600 text-sm font-semibold transition-colors"

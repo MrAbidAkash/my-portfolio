@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const ConnectSection = () => {
   const [copied, setCopied] = useState(false);
-  const email = "abidakash@example.com";
+  const email = "mrabidakash@gmail.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -16,7 +16,7 @@ const ConnectSection = () => {
 
   const socialPills = [
     { label: "GITHUB", href: "https://github.com", icon: FiGithub },
-    { label: "LINKEDIN", href: "https://linkedin.com", icon: FiLinkedin },
+    { label: "LINKEDIN", href: "https://linkedin.com/in/mrabidakash", icon: FiLinkedin },
     { label: "TWITTER", href: "https://twitter.com", icon: FiTwitter },
     { label: "EMAIL ME", href: `mailto:${email}`, icon: FiMail },
   ];

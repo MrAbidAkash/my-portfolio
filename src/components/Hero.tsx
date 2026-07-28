@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Bio Description */}
           <p className="text-stone-600 text-base sm:text-lg leading-relaxed max-w-xl">
-            With 5+ years of experience architecting high-performance web applications, specializing in React, Next.js, TypeScript, and modern Cloud & Backend ecosystems.
+            With 3+ years of experience architecting high-performance web applications, specializing in React, Next.js, Node.js, and modern Cloud & Backend ecosystems.
           </p>
 
           {/* CTA Action Buttons */}
@@ -69,7 +69,7 @@ const Hero = () => {
               <FiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/mrabidakash"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn Profile"
@@ -78,7 +78,7 @@ const Hero = () => {
               <FiLinkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:mrabidakash@gmail.com"
               aria-label="Email Contact"
               className="p-2 text-stone-600 hover:text-teal-600 hover:bg-teal-50 rounded-full transition-colors"
             >
@@ -101,7 +101,7 @@ const Hero = () => {
             {/* Floating Morph Picture Container */}
             <div className="w-full h-full relative overflow-hidden rounded-full border-4 border-white shadow-2xl FloatingAnimation bg-stone-200">
               <Image
-                alt="Mr. Abid Akash Profile"
+                alt="Abidur Rahman Profile"
                 src="/MrAbidAkash.jpg"
                 fill
                 priority
