@@ -38,42 +38,6 @@ export const projectsData = [
     githubUrl: "#",
   },
   {
-    id: "digital-soft-card",
-    title: "Digital Soft Card Dashboard",
-    category: "Web Application",
-    tags: ["Next.js", "Node.js", "Express.js"],
-    img: "/ghotion.png",
-    description:
-      "A fully featured Super Admin and Company Admin dashboard for managing organizations, employees, and digital business cards.",
-    year: "2024",
-    demoUrl: "https://softcard.app",
-    githubUrl: "#",
-  },
-  {
-    id: "vynteex-platform",
-    title: "Vynteex (Digital Course Platform)",
-    category: "E-Commerce",
-    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
-    img: "/Health-Solutions.png",
-    description:
-      "A high-conversion Bangla-language digital course selling platform focused on relationship, intimacy, and health education.",
-    year: "2023",
-    demoUrl: "https://vynteex.com",
-    githubUrl: "#",
-  },
-  {
-    id: "partner-referral",
-    title: "Partner & Referral Program Module",
-    category: "Web Application",
-    tags: ["AI Validation", "Automated Onboarding"],
-    img: "/ghotion.png",
-    description:
-      "Implemented a partner referral system with AI-powered validation, automating partner onboarding.",
-    year: "2025",
-    demoUrl: "https://everythingainow.com/",
-    githubUrl: "#",
-  },
-  {
     id: "kaajlagbe",
     title: "KaajLagbe",
     category: "SaaS Product",
@@ -98,27 +62,27 @@ export const projectsData = [
     githubUrl: "#",
   },
   {
-    id: "englishfnf",
-    title: "English FnF",
-    category: "Landing Page",
-    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
-    img: "/GuideFNF.png",
+    id: "digital-soft-card",
+    title: "Digital Soft Card Dashboard",
+    category: "Web Application",
+    tags: ["Next.js", "Node.js", "Express.js"],
+    img: "/ghotion.png",
     description:
-      "An educational landing page platform dynamically managed with Payload CMS.",
+      "A fully featured Super Admin and Company Admin dashboard for managing organizations, employees, and digital business cards.",
     year: "2024",
-    demoUrl: "https://englishfnf.vercel.app/",
+    demoUrl: "https://softcard.app",
     githubUrl: "#",
   },
   {
-    id: "vynteex-store",
-    title: "Vynteex Store",
-    category: "E-Commerce Landing Page",
-    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
-    img: "/Payload-Blank-Template.png",
+    id: "partner-referral",
+    title: "Partner & Referral Program Module",
+    category: "Web Application",
+    tags: ["AI Validation", "Automated Onboarding"],
+    img: "/ghotion.png",
     description:
-      "A product-focused e-commerce landing page featuring variant selection.",
-    year: "2024",
-    demoUrl: "https://vynteex.xyz",
+      "Implemented a partner referral system with AI-powered validation, automating partner onboarding.",
+    year: "2025",
+    demoUrl: "https://everythingainow.com/",
     githubUrl: "#",
   },
   {
@@ -169,6 +133,42 @@ export const projectsData = [
     demoUrl: "#",
     githubUrl: "#",
   },
+  {
+    id: "vynteex-platform",
+    title: "Vynteex (Digital Course Platform)",
+    category: "Landing Page",
+    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
+    img: "/Health-Solutions.png",
+    description:
+      "A high-conversion Bangla-language digital course selling platform focused on relationship, intimacy, and health education.",
+    year: "2023",
+    demoUrl: "https://vynteex.com",
+    githubUrl: "#",
+  },
+  {
+    id: "englishfnf",
+    title: "English FnF",
+    category: "Landing Page",
+    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
+    img: "/GuideFNF.png",
+    description:
+      "An educational landing page platform dynamically managed with Payload CMS.",
+    year: "2024",
+    demoUrl: "https://englishfnf.vercel.app/",
+    githubUrl: "#",
+  },
+  {
+    id: "vynteex-store",
+    title: "Vynteex Store",
+    category: "E-Commerce Landing Page",
+    tags: ["Next.js", "Payload CMS", "Tailwind CSS"],
+    img: "/Payload-Blank-Template.png",
+    description:
+      "A product-focused e-commerce landing page featuring variant selection.",
+    year: "2024",
+    demoUrl: "https://vynteex.xyz",
+    githubUrl: "#",
+  },
 ];
 
 const Works = () => {
@@ -193,7 +193,7 @@ const Works = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projectsData.map((project, index) => (
+        {projectsData.slice(0, 6).map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
