@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import ContactForm from "@/components/ContactForm";
-import { FiMail, FiMapPin, FiClock, FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
+import { FiMail, FiMapPin, FiPhone, FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
 
 const contactCards = [
   {
@@ -14,14 +14,14 @@ const contactCards = [
   {
     icon: FiMapPin,
     title: "Current Location",
-    value: "Dhaka, Bangladesh (Available Worldwide)",
+    value: "Dhaka, Bangladesh",
     href: "#",
   },
   {
-    icon: FiClock,
-    title: "Working Hours",
-    value: "Mon — Fri: 9:00 AM — 6:00 PM (GMT+6)",
-    href: "#",
+    icon: FiPhone,
+    title: "Phone Number",
+    value: "01607008272",
+    href: "tel:+8801607008272",
   },
 ];
 

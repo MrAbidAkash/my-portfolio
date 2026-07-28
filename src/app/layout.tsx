@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mrabidakash.dev"),
   title: "Abidur Rahman (Abid) — Full-Stack Software Developer",
   description:
     "Portfolio of Abidur Rahman (Abid), specializing in modern React, Next.js, TypeScript, and high-performance Web Applications.",
