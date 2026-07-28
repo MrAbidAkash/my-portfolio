@@ -24,7 +24,7 @@ const techStack = [
 
 const Hero = () => {
   return (
-    <section className="relative pt-24 pb-16 md:pt-20 md:pb-24 overflow-hidden">
+    <section className="relative pt-24 pb-16 md:pt-20 md:pb-18 overflow-hidden">
       {/* Background glow accents (Optimized with radial gradients instead of heavy blurs) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/60 via-indigo-50/20 to-transparent pointer-events-none rounded-full" />
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-200/40 to-transparent pointer-events-none rounded-full" />
