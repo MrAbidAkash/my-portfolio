@@ -15,8 +15,8 @@ const ConnectSection = () => {
   };
 
   const socialPills = [
-    { label: "GITHUB", href: "https://github.com", icon: FiGithub },
-    { label: "LINKEDIN", href: "https://linkedin.com/in/mrabidakash", icon: FiLinkedin },
+    { label: "GITHUB", href: "https://github.com/MrAbidAkash/", icon: FiGithub },
+    { label: "LINKEDIN", href: "https://www.linkedin.com/in/mrabidakash/", icon: FiLinkedin },
     { label: "TWITTER", href: "https://twitter.com", icon: FiTwitter },
     { label: "EMAIL ME", href: `mailto:${email}`, icon: FiMail },
   ];

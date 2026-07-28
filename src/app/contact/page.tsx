@@ -80,7 +80,7 @@ export default function ContactPage() {
         <h3 className="text-lg font-bold text-stone-900">Connect via Social Channels</h3>
         <div className="flex items-center justify-center space-x-6">
           <a
-            href="https://github.com"
+            href="https://github.com/MrAbidAkash/"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-stone-700 hover:text-teal-600 text-sm font-semibold transition-colors"
@@ -89,7 +89,7 @@ export default function ContactPage() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://linkedin.com/in/mrabidakash"
+            href="https://www.linkedin.com/in/mrabidakash/"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-stone-700 hover:text-teal-600 text-sm font-semibold transition-colors"

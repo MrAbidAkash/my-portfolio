@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="flex items-center space-x-4 pt-4 border-t border-stone-200/80 w-full">
             <span className="text-xs font-mono uppercase text-stone-400 tracking-wider">Connect:</span>
             <a
-              href="https://github.com"
+              href="https://github.com/MrAbidAkash/"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub Profile"
@@ -69,7 +69,7 @@ const Hero = () => {
               <FiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/mrabidakash"
+              href="https://www.linkedin.com/in/mrabidakash/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn Profile"

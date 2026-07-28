@@ -35,7 +35,7 @@ const Footer = () => {
 
           <div className="flex items-center space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/MrAbidAkash/"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -44,7 +44,7 @@ const Footer = () => {
               <FiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/mrabidakash"
+              href="https://www.linkedin.com/in/mrabidakash/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
