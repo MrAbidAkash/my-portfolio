@@ -13,7 +13,7 @@ const experiences = [
       "Architected and developed a scalable ERP platform (HRM, CRM, Task Management) using React, Express.js, Prisma, PostgreSQL, and Redis.",
       "Built a task management system used by 100+ employees, enabling real-time task tracking and centralized workflow management.",
       "Designed and optimized the CRM module to efficiently manage thousands of sales leads using PostgreSQL and Redis caching.",
-      "Developed a cross-platform employee monitoring and remote management solution supporting Windows and macOS.",
+      "Designed and built a cross-platform PC tracking and remote management client software supporting Windows and macOS.",
       "Built Digital Soft Card Super Admin and Company Admin Dashboard for centralized company management.",
     ],
     skills: ["React", "Express.js", "Prisma", "PostgreSQL", "Redis", "Electron.js", "Python"],
