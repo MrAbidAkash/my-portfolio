@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900 leading-[1.1]">
-            Hi, I&apos;m a <span className="bg-gradient-to-r from-teal-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Software Developer</span>
+            Hi, I&apos;m <span className="bg-gradient-to-r from-teal-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Mr.AbidAkash</span>
           </h1>
 
           {/* Bio Description */}
@@ -101,7 +101,7 @@ const Hero = () => {
             {/* Floating Morph Picture Container */}
             <div className="w-full h-full relative overflow-hidden rounded-full border-4 border-white shadow-2xl FloatingAnimation bg-stone-200">
               <Image
-                alt="Abidur Rahman Profile"
+                alt="Mr.AbidAkash Profile"
                 src="/MrAbidAkash.jpg"
                 fill
                 priority

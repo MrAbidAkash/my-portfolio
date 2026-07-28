@@ -62,7 +62,7 @@ export default function AboutPage() {
         className="space-y-4 text-center max-w-3xl mx-auto"
       >
         <span className="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono font-semibold uppercase tracking-widest rounded-full">
-          ABOUT ABIDUR RAHMAN
+          ABOUT MR.ABIDAKASH
         </span>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-stone-900">
           Passionate about building software that makes an impact
@@ -83,7 +83,7 @@ export default function AboutPage() {
           <div className="relative w-full max-w-sm h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-stone-200">
             <Image
               src="/MrAbidAkash.jpg"
-              alt="Abidur Rahman"
+              alt="Mr.AbidAkash"
               fill
               className="object-cover object-top"
             />
@@ -100,7 +100,7 @@ export default function AboutPage() {
             Crafting code with precision & creative design vision
           </h2>
           <p>
-            Hello! I&apos;m Abidur Rahman (Abid). Over the past 3+ years, I&apos;ve collaborated with startups, high-growth tech companies, and clients worldwide to design and engineer web applications.
+            Hello! I&apos;m Mr.AbidAkash. Over the past 3+ years, I&apos;ve collaborated with startups, high-growth tech companies, and clients worldwide to design and engineer web applications.
           </p>
           <p>
             My core engineering domain centers around the modern JavaScript & TypeScript ecosystem (React, Next.js, Node.js). Whether building ERP platforms, CRM systems, or desktop applications, I focus heavily on component reusability, server rendering performance, and clean architectural design.

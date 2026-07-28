@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mrabidakash.dev"),
-  title: "Abidur Rahman (Abid) — Full-Stack Software Developer",
+  title: "Mr.AbidAkash — Full-Stack Software Developer",
   description:
-    "Portfolio of Abidur Rahman (Abid), specializing in modern React, Next.js, TypeScript, and high-performance Web Applications.",
+    "Portfolio of Mr.AbidAkash, specializing in modern React, Next.js, TypeScript, and high-performance Web Applications.",
   keywords: [
     "Software Developer",
     "Full Stack Engineer",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     "Python",
     "Web Developer Portfolio",
   ],
-  authors: [{ name: "Abidur Rahman" }],
+  authors: [{ name: "Mr.AbidAkash" }],
   openGraph: {
-    title: "Abidur Rahman (Abid) — Full-Stack Software Developer",
+    title: "Mr.AbidAkash — Full-Stack Software Developer",
     description:
       "Crafting high-performance web applications, scalable architectures, and enterprise systems.",
     type: "website",
