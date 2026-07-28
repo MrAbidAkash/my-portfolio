@@ -30,13 +30,13 @@ const Hero = () => {
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-200/40 to-transparent pointer-events-none rounded-full" />
       <div className="absolute top-48 -left-24 w-72 h-72 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-teal-200/40 to-transparent pointer-events-none rounded-full" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Left Column: Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="lg:col-span-7 flex flex-col items-start space-y-8 text-left"
+          className="lg:col-span-7 flex flex-col items-center sm:items-start space-y-8 tex-center sm:text-left order-2 lg:order-1"
         >
           {/* Availability Pill */}
           <motion.div
@@ -84,7 +84,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="flex flex-wrap items-center gap-4 pt-2"
+            className="flex flex-wrap items-center justify-center sm:justify-start gap-4 pt-2"
           >
             <Link
               href="/contact"
@@ -110,10 +110,10 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="pt-8 border-t border-stone-200/60 w-full"
           >
-            <p className="text-xs font-mono uppercase text-stone-400 tracking-wider mb-4">
+            <p className="text-xs font-mono uppercase text-stone-400 tracking-wider mb-4 text-center sm:text-left">
               Core Technologies
             </p>
-            <div className="flex items-center gap-6 flex-wrap">
+            <div className="flex items-center justify-center sm:justify-start gap-6 flex-wrap">
               {techStack.map((tech, i) => {
                 const Icon = tech.icon;
                 return (
@@ -140,7 +140,7 @@ const Hero = () => {
             type: "spring",
             stiffness: 100,
           }}
-          className="lg:col-span-5 flex justify-center lg:justify-end relative"
+          className="lg:col-span-5 flex justify-center lg:justify-end relative order-1 lg:order-2"
         >
           <div className="relative w-[320px] h-[320px] sm:w-[400px] sm:h-[400px]">
             {/* Multi-layered animated rings */}
