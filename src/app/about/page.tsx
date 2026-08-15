@@ -192,45 +192,24 @@ export default function AboutPage() {
       {/* Experience Timeline */}
       <Experience />
 
-      {/* Education & Certifications */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-        <div className="space-y-6">
-          <div className="space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
-              ACADEMIC BACKGROUND
-            </span>
-            <h2 className="text-2xl font-bold text-stone-900 tracking-tight">
-              Education
-            </h2>
-          </div>
-          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm">
-            <h3 className="text-lg font-bold text-stone-900">Bachelor of Arts, English Language and Literature</h3>
-            <div className="text-sm font-semibold text-teal-600 mb-2">Daffodil International University (DIU)</div>
-            <div className="text-xs font-mono text-stone-500 mb-4">2019 — 2022 (Incomplete)</div>
-            <p className="text-sm text-stone-600 leading-relaxed">
-              Completed coursework through Year 2; left program to pursue full‑time software development.
-            </p>
-          </div>
+      {/* Professional Credentials / Licenses & Certifications */}
+      <div className="space-y-6 pt-8">
+        <div className="space-y-2">
+          <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
+            PROFESSIONAL CREDENTIALS
+          </span>
+          <h2 className="text-2xl font-bold text-stone-900 tracking-tight">
+            Licenses & Certifications
+          </h2>
         </div>
-
-        <div className="space-y-6">
-          <div className="space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-teal-600 font-semibold">
-              PROFESSIONAL CREDENTIALS
-            </span>
-            <h2 className="text-2xl font-bold text-stone-900 tracking-tight">
-              Licenses & Certifications
-            </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
+            <h3 className="text-base font-bold text-stone-900">Google Cybersecurity Specialization</h3>
+            <div className="text-sm text-stone-500">Google</div>
           </div>
-          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-            <div className="flex flex-col border-b border-stone-100 pb-4">
-              <h3 className="text-base font-bold text-stone-900">Google Cybersecurity Specialization</h3>
-              <div className="text-sm text-stone-500">Google</div>
-            </div>
-            <div className="flex flex-col">
-              <h3 className="text-base font-bold text-stone-900">Google Data Analytics Specialization</h3>
-              <div className="text-sm text-stone-500">Google</div>
-            </div>
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
+            <h3 className="text-base font-bold text-stone-900">Google Data Analytics Specialization</h3>
+            <div className="text-sm text-stone-500">Google</div>
           </div>
         </div>
       </div>
