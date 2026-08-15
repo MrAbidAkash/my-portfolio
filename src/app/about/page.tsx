@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FiArrowRight, FiCheckCircle, FiAward, FiCode, FiCpu, FiGlobe } from "react-icons/fi";
+import { FiArrowRight, FiCheckCircle, FiAward, FiCode, FiCpu, FiGlobe, FiExternalLink } from "react-icons/fi";
 import Experience from "@/components/Experience";
 
 const skillsCategories = [
@@ -203,14 +203,38 @@ export default function AboutPage() {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
-            <h3 className="text-base font-bold text-stone-900">Google Cybersecurity Specialization</h3>
-            <div className="text-sm text-stone-500">Google</div>
-          </div>
-          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
-            <h3 className="text-base font-bold text-stone-900">Google Data Analytics Specialization</h3>
-            <div className="text-sm text-stone-500">Google</div>
-          </div>
+          <a
+            href="https://www.coursera.org/account/accomplishments/specialization/22H8HMNARXD7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm hover:border-teal-500/50 hover:shadow-md transition-all duration-200 block"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-base font-bold text-stone-900 group-hover:text-teal-600 transition-colors">
+                  Google Cybersecurity Specialization
+                </h3>
+                <div className="text-sm text-stone-500 mt-1">Google</div>
+              </div>
+              <FiExternalLink className="w-4 h-4 text-stone-400 group-hover:text-teal-600 transition-colors shrink-0 mt-1" />
+            </div>
+          </a>
+          <a
+            href="https://www.coursera.org/account/accomplishments/specialization/5AZP6LR7BJLY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm hover:border-teal-500/50 hover:shadow-md transition-all duration-200 block"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-base font-bold text-stone-900 group-hover:text-teal-600 transition-colors">
+                  Google Data Analytics Specialization
+                </h3>
+                <div className="text-sm text-stone-500 mt-1">Google</div>
+              </div>
+              <FiExternalLink className="w-4 h-4 text-stone-400 group-hover:text-teal-600 transition-colors shrink-0 mt-1" />
+            </div>
+          </a>
         </div>
       </div>
 
