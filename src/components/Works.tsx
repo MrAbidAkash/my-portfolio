@@ -33,7 +33,7 @@ export const projectsData = [
     img: "/cyntrafold-overview.jpg",
     description:
       "A cross-platform enterprise device monitoring platform processing millions of activity records from hundreds of endpoints.",
-    year: "2024",
+    year: "2026",
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -45,7 +45,7 @@ export const projectsData = [
     img: "/kaajLagbe-HiPages-BD-MVP.png",
     description:
       "A comprehensive SaaS platform providing job placement and business solutions.",
-    year: "2024",
+    year: "2026",
     demoUrl: "https://kaajlagbe.com",
     githubUrl: "#",
   },
@@ -57,7 +57,7 @@ export const projectsData = [
     img: "/ChatTime-AI-Intelligent-Conversational-Platform.png",
     description:
       "An AI-powered SaaS application built with Next.js for intelligent conversations.",
-    year: "2024",
+    year: "2025",
     demoUrl: "https://chattimeai.com",
     githubUrl: "#",
   },
@@ -93,7 +93,7 @@ export const projectsData = [
     img: "/Innovo-Exports-Imports-–-You-want-it-We-build-it-best-.png",
     description:
       "A professional export-import business website built with WordPress.",
-    year: "2024",
+    year: "2025",
     demoUrl: "https://innovoexportimport.com/",
     githubUrl: "#",
   },
@@ -105,7 +105,7 @@ export const projectsData = [
     img: "/Innovomart-–-Innovomart.png",
     description:
       "A digital e-commerce storefront platform built with WordPress.",
-    year: "2024",
+    year: "2026",
     demoUrl: "https://innovomart.com/",
     githubUrl: "#",
   },
@@ -117,7 +117,7 @@ export const projectsData = [
     img: "/Electro-Mechanical-–-Matin-Haji-Company-LTD.png",
     description:
       "A corporate website for Matin Haji Company Ltd. in Saudi Arabia.",
-    year: "2023",
+    year: "2024",
     demoUrl: "https://matinhajiksa.com/",
     githubUrl: "#",
   },
@@ -129,7 +129,7 @@ export const projectsData = [
     img: "/ghotion.png",
     description:
       "A local business directory and corporate website built with WordPress.",
-    year: "2023",
+    year: "2026",
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -141,7 +141,7 @@ export const projectsData = [
     img: "/Health-Solutions.png",
     description:
       "A high-conversion Bangla-language digital course selling platform focused on relationship, intimacy, and health education.",
-    year: "2023",
+    year: "2025",
     demoUrl: "https://vynteex.com",
     githubUrl: "#",
   },
@@ -153,7 +153,7 @@ export const projectsData = [
     img: "/GuideFNF.png",
     description:
       "An educational landing page platform dynamically managed with Payload CMS.",
-    year: "2024",
+    year: "2026",
     demoUrl: "https://englishfnf.vercel.app/",
     githubUrl: "#",
   },
@@ -165,7 +165,7 @@ export const projectsData = [
     img: "/Payload-Blank-Template.png",
     description:
       "A product-focused e-commerce landing page featuring variant selection.",
-    year: "2024",
+    year: "2026",
     demoUrl: "https://vynteex.xyz",
     githubUrl: "#",
   },
