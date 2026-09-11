@@ -26,6 +26,25 @@ export const projectsData = [
     githubUrl: "#",
   },
   {
+    id: "hrm-system",
+    title: "HR - Management System (HRM)",
+    category: "Full-Stack Web App",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "ZKTeco Biometric",
+    ],
+    img: "/HR-Management-System-HRM.png",
+    description:
+      "A comprehensive Human Resource Management system featuring real-time ZKTeco biometric attendance synchronization, employee directory, shift tracking, and leave management.",
+    year: "2026",
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
     id: "pc-monitoring",
     title: "PC Monitoring & Remote Management",
     category: "Desktop & Web System",
@@ -42,7 +61,7 @@ export const projectsData = [
     title: "KaajLagbe",
     category: "SaaS Product",
     tags: ["Next.js", "Full-Stack Web App"],
-    img: "/kaajLagbe-HiPages-BD-MVP.png",
+    img: "/kaajLagbe.png",
     description:
       "A comprehensive SaaS platform providing job placement and business solutions.",
     year: "2026",
@@ -86,18 +105,6 @@ export const projectsData = [
   //   githubUrl: "#",
   // },
   {
-    id: "innovoexportimport",
-    title: "Innovo Export Import",
-    category: "WordPress Website",
-    tags: ["WordPress", "Corporate"],
-    img: "/Innovo-Exports-Imports-–-You-want-it-We-build-it-best-.png",
-    description:
-      "A professional export-import business website built with WordPress.",
-    year: "2025",
-    demoUrl: "https://innovoexportimport.com/",
-    githubUrl: "#",
-  },
-  {
     id: "innovomart",
     title: "InnovoMart",
     category: "WordPress Website",
@@ -107,6 +114,18 @@ export const projectsData = [
       "A digital e-commerce storefront platform built with WordPress.",
     year: "2026",
     demoUrl: "https://innovomart.com/",
+    githubUrl: "#",
+  },
+  {
+    id: "innovoexportimport",
+    title: "Innovo Export Import",
+    category: "WordPress Website",
+    tags: ["WordPress", "Corporate"],
+    img: "/Innovo-Exports-Imports-–-You-want-it-We-build-it-best-.png",
+    description:
+      "A professional export-import business website built with WordPress.",
+    year: "2025",
+    demoUrl: "https://innovoexportimport.com/",
     githubUrl: "#",
   },
   {
