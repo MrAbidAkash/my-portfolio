@@ -14,8 +14,10 @@ import {
   SiRedux,
   SiDocker,
   SiAmazonwebservices,
-  SiPython
+  SiPython,
+  SiExpo,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const techIcons = [
   { icon: SiReact, title: "React" },
@@ -29,7 +31,9 @@ const techIcons = [
   { icon: SiRedux, title: "Redux Toolkit" },
   { icon: SiDocker, title: "Docker" },
   { icon: SiAmazonwebservices, title: "AWS" },
-  { icon: SiPython, title: "Python" }
+  { icon: SiPython, title: "Python" },
+  { icon: TbBrandReactNative, title: "React Native" },
+  { icon: SiExpo, title: "Expo" },
 ];
 
 const services = [

@@ -42,7 +42,7 @@ const experiences = [
       "Designed scalable architectures and implemented secure backend systems.",
       "Provided post-deployment optimization and performance improvements.",
     ],
-    skills: ["Full-Stack Development", "System Architecture", "Performance Optimization"],
+    skills: ["React Native", "Expo", "Full-Stack Development", "System Architecture", "Performance Optimization"],
   },
 ];
 

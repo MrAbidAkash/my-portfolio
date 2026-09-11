@@ -11,6 +11,7 @@ const categories = [
   "Full-Stack Web App",
   "SaaS Product",
   "Web Application",
+  "Mobile App",
   "WordPress Website",
   "E-Commerce",
   "Landing Page",

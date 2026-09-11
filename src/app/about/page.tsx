@@ -16,6 +16,10 @@ const skillsCategories = [
     skills: ["Node.js", "Nest.js", "Express.js", "REST APIs", "JWT Auth", "RBAC", "Webhooks"],
   },
   {
+    title: "Mobile",
+    skills: ["React Native", "Expo"],
+  },
+  {
     title: "Databases",
     skills: ["MongoDB", "PostgreSQL", "MySQL"],
   },
