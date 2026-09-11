@@ -17,11 +17,11 @@ const skillsCategories = [
   },
   {
     title: "Mobile",
-    skills: ["React Native", "Expo"],
+    skills: ["React Native", "Expo", "NativeWind"],
   },
   {
-    title: "Databases",
-    skills: ["MongoDB", "PostgreSQL", "MySQL"],
+    title: "Databases & Caching",
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
   },
   {
     title: "Desktop",
@@ -32,8 +32,15 @@ const skillsCategories = [
     skills: ["Prisma ORM", "Payload CMS", "Git", "Docker", "Linux", "Coolify", "Dokploy", "GCP", "AWS"],
   },
   {
-    title: "Integrations",
-    skills: ["Google Maps API", "Google Calendar API", "GoHighLevel CRM"],
+    title: "Hardware & Integrations",
+    skills: [
+      "ZKTeco Biometric Devices (TCP/IP)",
+      "node-zklib",
+      "Firebase Push Notifications",
+      "Google Maps API",
+      "Google Calendar API",
+      "GoHighLevel CRM"
+    ],
   },
 ];
 
@@ -104,10 +111,10 @@ export default function AboutPage() {
             Crafting code with precision & creative design vision
           </h2>
           <p>
-            Hello! I&apos;m Mr.AbidAkash. Over the past 3+ years, I&apos;ve collaborated with startups, high-growth tech companies, and clients worldwide to design and engineer web applications.
+            Hello! I&apos;m <span className="font-semibold text-stone-900">Abidur Rahman</span> (widely recognized as <span className="font-semibold text-teal-700">Mr.AbidAkash</span>). Over the past 3+ years, I&apos;ve collaborated with startups, enterprise teams, and global clients to engineer high-throughput web applications, cross-platform mobile apps, and distributed systems.
           </p>
           <p>
-            My core engineering domain centers around the modern JavaScript & TypeScript ecosystem (React, Next.js, Node.js). Whether building ERP platforms, CRM systems, or desktop applications, I focus heavily on component reusability, server rendering performance, and clean architectural design.
+            My core engineering domain spans the modern JavaScript, TypeScript, and Python ecosystems (React, Next.js, React Native, Node.js, Electron). Whether architecting scalable ERP platforms, ZKTeco biometric hardware sync engines, or desktop device monitoring agents, I prioritize system reliability, sub-second performance, and clean architectural maintainability.
           </p>
 
           <div className="grid grid-cols-2 gap-4 pt-4 border-t border-stone-200">
@@ -126,6 +133,8 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+
+
         </motion.div>
       </div>
 

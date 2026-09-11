@@ -11,12 +11,13 @@ const experiences = [
     location: "On-Site",
     highlights: [
       "Architected and developed a scalable ERP platform (HRM, CRM, Task Management) using React, Express.js, Prisma, PostgreSQL, and Redis.",
-      "Built a task management system used by 100+ employees, enabling real-time task tracking and centralized workflow management.",
-      "Designed and optimized the CRM module to efficiently manage thousands of sales leads using PostgreSQL and Redis caching.",
-      "Designed and built a cross-platform PC tracking and remote management client software supporting Windows and macOS.",
-      "Built Digital Soft Card Super Admin and Company Admin Dashboard for centralized company management.",
+      "Developed an enterprise HRM & Payroll system with ZKTeco biometric device integration via TCP/IP, automating attendance synchronization, dynamic shift policies, and monthly salary disbursement with advance recovery.",
+      "Built a task management system used by 100+ employees, enabling real-time task tracking, progress reporting, and centralized workflow management.",
+      "Designed and optimized the CRM module to efficiently manage thousands of sales leads using PostgreSQL and Redis caching, improving search performance and lead pipeline responsiveness.",
+      "PC Monitoring & Remote Management Platform: Developed a cross-platform employee monitoring and remote management solution supporting Windows and macOS.",
+      "Built a fully featured Digital Soft Card Super Admin and Company Admin Dashboard for centralized company management, employee administration, and digital business card management.",
     ],
-    skills: ["React", "Express.js", "Prisma", "PostgreSQL", "Redis", "Electron.js", "Python"],
+    skills: ["React", "Express.js", "Prisma", "PostgreSQL", "Redis", "Electron.js", "Python", "ZKTeco Biometrics", "TCP/IP"],
   },
   {
     company: "FutuRexa Solutions, Inc.",
@@ -26,7 +27,7 @@ const experiences = [
     highlights: [
       "Developed and deployed an AI-driven partner and referral platform with automated onboarding workflows.",
       "Integrated GoHighLevel CRM via API automation to streamline lead capture and follow-up sequences.",
-      "Implemented Google Maps API for location-based tradie matching.",
+      "Implemented Google Maps API for location-based tradie matching (5–10 km radius search).",
       "Integrated Google Calendar API for real-time availability scheduling.",
       "Refactored a membership management portal enabling desk managers to manage check-ins, payments, and attendance.",
     ],
@@ -42,7 +43,7 @@ const experiences = [
       "Designed scalable architectures and implemented secure backend systems.",
       "Provided post-deployment optimization and performance improvements.",
     ],
-    skills: ["React Native", "Expo", "Full-Stack Development", "System Architecture", "Performance Optimization"],
+    skills: ["React Native", "Expo", "NativeWind", "Full-Stack Development", "System Architecture", "Performance Optimization"],
   },
 ];
 

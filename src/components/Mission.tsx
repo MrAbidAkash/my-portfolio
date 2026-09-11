@@ -16,6 +16,7 @@ import {
   SiAmazonwebservices,
   SiPython,
   SiExpo,
+  SiRedis,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -27,6 +28,7 @@ const techIcons = [
   { icon: SiTailwindcss, title: "Tailwind CSS" },
   { icon: SiPostgresql, title: "PostgreSQL" },
   { icon: SiMongodb, title: "MongoDB" },
+  { icon: SiRedis, title: "Redis" },
   { icon: SiPrisma, title: "Prisma ORM" },
   { icon: SiRedux, title: "Redux Toolkit" },
   { icon: SiDocker, title: "Docker" },

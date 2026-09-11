@@ -11,6 +11,7 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiRedis,
 } from "react-icons/si";
 
 const techStack = [
@@ -19,6 +20,7 @@ const techStack = [
   { icon: SiNextdotjs, color: "text-stone-900" },
   { icon: SiNodedotjs, color: "text-green-600" },
   { icon: SiPostgresql, color: "text-indigo-600" },
+  { icon: SiRedis, color: "text-red-600" },
   { icon: SiTailwindcss, color: "text-teal-500" },
 ];
 
