@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiCheckCircle, FiAward, FiCode, FiCpu, FiGlobe, FiExternalLink } from "react-icons/fi";
 import Experience from "@/components/Experience";
+import ResumeSection from "@/components/ResumeSection";
 
 const skillsCategories = [
   {
@@ -250,6 +251,9 @@ export default function AboutPage() {
           </a>
         </div>
       </div>
+
+      {/* Resume Download Section */}
+      <ResumeSection />
 
       {/* Bottom CTA */}
       <div className="bg-stone-900 text-white rounded-3xl p-8 sm:p-12 text-center space-y-6">

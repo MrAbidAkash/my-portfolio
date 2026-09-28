@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
+import { FiMenu, FiX, FiArrowUpRight, FiFileText } from "react-icons/fi";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -59,8 +59,17 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Call CTA Button */}
-          <div className="hidden md:flex items-center space-x-3">
+          {/* Action Buttons */}
+          <div className="hidden md:flex items-center space-x-2.5">
+            <a
+              href="/Resume_Abidur_Rahman.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-stone-200 hover:border-teal-500/50 hover:bg-teal-50/50 text-stone-700 hover:text-teal-700 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer"
+            >
+              <FiFileText className="w-3.5 h-3.5 text-teal-600" />
+              <span>Resume</span>
+            </a>
             <Link
               href="/contact"
               className="inline-flex items-center gap-1.5 px-4 py-2 bg-stone-900 hover:bg-teal-600 text-white text-xs font-semibold rounded-full transition-all duration-200 shadow-sm group cursor-pointer"
@@ -109,6 +118,19 @@ export default function Header() {
                   </Link>
                 );
               })}
+              <a
+                href="/Resume_Abidur_Rahman.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="flex items-center justify-between px-4 py-3 text-sm font-semibold rounded-xl text-stone-700 hover:bg-stone-100 transition-colors"
+              >
+                <span className="flex items-center gap-2">
+                  <FiFileText className="w-4 h-4 text-teal-600" />
+                  <span>Resume (PDF)</span>
+                </span>
+                <span className="text-xs font-mono text-teal-600 bg-teal-50 px-2 py-0.5 rounded">View</span>
+              </a>
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}

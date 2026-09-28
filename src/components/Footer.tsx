@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap items-center gap-6">
             {["Home", "About", "Projects", "Contact"].map((item) => (
               <Link
                 key={item}
